@@ -22,7 +22,7 @@ import Graph2, { type N2Record } from "@/components/Graph2";
 
 export default function DashboardClient() {
 
-  const [fields, setFields] = useState<FieldMetadata[]>([]);
+  const [fields, setFields] = useState<fieldMetadata[]>([]);
   const [monthlyRecords, setMonthlyRecords] = useState<MonthlyFieldRecord[]>([]);
   const [yearlyRecords, setYearlyRecords] = useState<YearlyFieldRecord[]>([]);
 
