@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import MetricCard from "@/components/MetricCard";
 
-import type { fieldMetadata } from "@/lib/fieldMetadata";
+import type { FieldMetadata } from "@/lib/fieldMetadata";
 import type {
   MonthlyFieldRecord,
   YearlyFieldRecord,
@@ -22,7 +22,7 @@ import Graph2, { type N2Record } from "@/components/Graph2";
 
 export default function DashboardClient() {
 
-  const [fields, setFields] = useState<fieldMetadata[]>([]);
+  const [fields, setFields] = useState<FieldMetadata[]>([]);
   const [monthlyRecords, setMonthlyRecords] = useState<MonthlyFieldRecord[]>([]);
   const [yearlyRecords, setYearlyRecords] = useState<YearlyFieldRecord[]>([]);
 
