@@ -73,7 +73,7 @@ export default function DashboardClient() {
               setMonthlyRecords(data.monthlyRecords);
               setYearlyRecords(data.yearlyRecords);
 
-              setSelectedFields(data.fields.map((fieldMetaRecord)=>fieldMetaRecord.fieldName))
+              setSelectedFields(data.fields.map((fieldMetaRecord:FieldMetadata)=>fieldMetaRecord.fieldName))
 
               } catch (error) {
                   setFieldDataError("Something went wrong while loading field data.");
